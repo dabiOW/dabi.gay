@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	<title>DabuXian's portfolio</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="dabu, dabuxian, after effects, adobe, photoshop, my little pony, friendship is magic, mlp, fim, brony, bronies, video, artist, deviantart, deviant, pmv, russian dancing ponies, my little chickens, dubstep, pink-e, she reads all day, equestria daily">
+	<meta http-equiv="content-language" content="en">
+        
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+
+    <meta property="og:image" content="http://www.dabuxian.com/img/icon.png">
+
+	<meta name="theme-color" content="#007095">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        
+	<link rel="stylesheet" type="text/css" href="style12.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+        
+<!--    <meta name="viewport" content="width=device-width; initial-scale=1.0"> -->
+        
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	<script>
+	$(function() {
+	
+		function filterPath(string) {
+			return string
+			.replace(/^\//,'')
+			.replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+			.replace(/\/$/,'');
+		}
+	
+		var locationPath = filterPath(location.pathname);
+		var scrollElem = scrollableElement('html', 'body');
+	
+		// Any links with hash tags in them (can't do ^= because of fully qualified URL potential)
+		$('a[href*=#]').each(function() {
+	
+			// Ensure it's a same-page link
+			var thisPath = filterPath(this.pathname) || locationPath;
+			if (  locationPath == thisPath
+				&& (location.hostname == this.hostname || !this.hostname)
+				&& this.hash.replace(/#/,'') ) {
+	
+					// Ensure target exists
+					var $target = $(this.hash), target = this.hash;
+					if (target) {
+	
+						// Find location of target
+						var targetOffset = $target.offset().top;
+						$(this).click(function(event) {
+	
+							// Prevent jump-down
+							event.preventDefault();
+	
+							// Animate to target
+							$(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
+	
+								// Set hash in URL after animation successful
+								location.hash = target;
+	
+							});
+						});
+					}
+			}
+	
+		});
+	
+		// Use the first element that is "scrollable"  (cross-browser fix?)
+		function scrollableElement(els) {
+			for (var i = 0, argLength = arguments.length; i <argLength; i++) {
+				var el = arguments[i],
+				$scrollElement = $(el);
+				if ($scrollElement.scrollTop()> 0) {
+					return el;
+				} else {
+					$scrollElement.scrollTop(1);
+					var isScrollable = $scrollElement.scrollTop()> 0;
+					$scrollElement.scrollTop(0);
+					if (isScrollable) {
+						return el;
+					}
+				}
+			}
+			return [];
+		}
+	
+	});
+	</script>
+        
+	</head>
+
+  <body>
+
+      <!-- Top banner -->
+      
+    <div id="top">
+        
+      <div>
+        <p>Hey, I'm <em>DabuXian</em>.</p>
+        <p>I make videos about <em>cartoon ponies</em>.</p>
+        <p>Check <em>some of them</em> out down below.</p>
+      </div> 
+        
+      <div id="links">
+        <a href="#violet">Links &amp; Contact</a>
+      </div>
+        
+    </div>
+
+    <div id="pmvs">
+
+        <!-- She reads all day -->
+        
+          <div id="books"><a href="http://www.youtube.com/watch?v=fbsXev8Lkr8" target="_blank">WATCH ON YOUTUBE</a>, <a href="http://www.mediafire.com/?5on9p8ljq106xoe" target="_blank">DOWNLOAD MP4</a></div>
+        
+        <!-- Russian Dancing Ponies -->
+        
+          <div id="commie"><span><a href="http://www.youtube.com/watch?v=Zntt6-0z0TM" target="_blank">WATCH ON YOUTUBE</a>, <a href="http://www.mediafire.com/?pq310mbd5r50rza" target="_blank">DOWNLOAD MP4</a></span></div>
+
+        <!-- She likes clouds -->
+        
+          <div id="clouds"><a href="http://www.youtube.com/watch?v=XJ2ekuflyZM" target="_blank">WATCH ON YOUTUBE</a>, <a href="http://www.mediafire.com/?d3fet57dt9gf6g0" target="_blank">DOWNLOAD MP4</a></div>
+
+    </div>
+
+      <!-- Link to YouTube channel -->
+      
+    <div id="green">
+      <div><a href="http://youtube.com/user/dabuxian" target="_blank">Visit my <img src="img/youtube1x.png" srcset="img/youtube2x.png 2x" alt="YouTube"><span>YouTube</span> channel for more.</a></div>
+    </div>
+
+      <!-- All the other links part -->
+      
+    <div id="violet">
+
+      <div id="violet-container">
+          <h1>Follow</h1><br />
+          <a href="http://twitter.com/DabuXian" target="_blank"><img src="img/twitter.svg" alt="Twitter"></a>
+          <a href="https://google.com/+DabuXian" target="_blank"><img src="img/google.svg" alt="Google+"></a>
+          <a href="http://www.facebook.com/DabuXian" target="_blank"><img src="img/facebook.svg" alt="Facebook"></a>
+          <a href="http://dabuxian.tumblr.com" target="_blank"><img src="img/tumblr.svg" alt="Tumblr"></a>
+          <p><a href="http://dabuxian.deviantart.com" target="_blank">DeviantArt</a></p>
+          <p><a href="http://steamcommunity.com/groups/DabuXian">Steam group</a></p>
+
+          <h1>Contact</h1><br />
+          <p><a href="mailto:dabuxian@gmail.com">DabuXian@gmail.com</a></p>
+          <p><a href="skype:dabudash?chat">Skype: DabuDash</a></p>
+          <p><a href="http://steamcommunity.com/groups/DabuXian">Steam: Dabu</a></p>
+          
+        <!-- Paypal -->
+        
+          <img src="img/hearts.png" alt="" id="hearts">
+          
+          <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SC8HGMZRCCF2J" target="_blank" id="paypal">
+            Donate
+          </a>
+        
+        <!-- Copyright -->
+        
+        <div id="copyright">
+          &copy; 2015 by DabuXian. Copy as much as you want.
+        </div>    
+          
+      </div>
+
+
+
+    </div>
+
+      <!-- Analytics -->
+      
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34442192-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+      <!-- See, Georgy? I commented it, are you happy now? -->
+      
+  </body>
+</html>

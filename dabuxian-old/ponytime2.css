@@ -1,0 +1,118 @@
+/*
+YOURE ALLOWED TO
+COPY N PASTE.
+
+LOL, WHY AM I SAYING THIS?
+*/
+
+body {
+	font: 20pt/22pt roboto, arial, helvetica, sans-serif;
+	background: #bbb;
+	color: #333;
+	margin: 0;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+	-moz-text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+	-webkit-text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+	-khtml-text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+}
+#content {
+	width: 960px;
+	margin: 20px auto 0 auto;
+	text-align: center;
+}
+#banner { width: 960px; height: 265px; z-index: 2; position: relative; }
+#tresc { width: 840px; padding: 60px; background: #ddd url(img/telko.gif) no-repeat bottom right; position: relative; margin-top: -70px; z-index: 1; }
+#lol {
+	opacity: 0;
+	position: absolute;
+}
+a:link, a:visited {
+	color: #2374d9;
+	text-decoration: none;
+
+transition: all .2s ease-in-out;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+}
+a:hover, a:active {
+	color: #73adf6;
+	text-decoration: none;
+
+transition: all .2s ease-in-out;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+}
+#yt { background: url(img/youtube.png) no-repeat left; }
+#da { background: url(img/deviantart.png) no-repeat left; }
+#tb { background: url(img/tumblr.png) no-repeat left; }
+#vm { background: url(img/vimeo.png) no-repeat left; }
+.linkaszcz {
+	height: 64px;
+	width: 200px;
+	text-align: left;
+	padding: 32px 0 0 78px;
+	margin: 0 0 -15px 0;
+	font-size: 20pt;
+transition: all .2s ease-in-out;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+}
+.linkaszcz:hover { 
+	margin-left: 15px;
+transition: all .2s ease-in-out;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+}
+.linkaszcz a {
+	color: #444;
+}
+.linkaszcz a:hover, a:active {
+	color: #888;
+}
+h1 {
+	text-align: left;
+	margin: 0 0 5px 0;
+	padding: 0;
+	font-size: 26pt;
+	font-weight: normal;
+}
+h2 {
+	text-align: center;
+	margin: 0 auto;
+	padding: 4px;
+	font-size: 22pt;
+	font-weight: normal;
+	width: 300px;
+	border-bottom: 1px #333 solid;
+}
+#prawa {
+	position: absolute;
+	top: 60px;
+	margin-left: 580px;
+}
+.mini {
+	width: 500px;
+	height: 125px;
+	margin-bottom: 10px;
+	border: 2px #888 solid;
+transition: all .2s ease-in-out;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+
+}
+.mini:hover {
+	border: 2px #2374d9 solid;
+	box-shadow: 0 0 10px #2374d9;
+	-moz-box-shadow: 0 0 10px #2374d9;
+	-webkit-box-shadow: 0 0 10px #2374d9;
+	-khtml-box-shadow: 0 0 10px #2374d9;
+transition: all .2s ease-in-out;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+}
